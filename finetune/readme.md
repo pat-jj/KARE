@@ -1,0 +1,2 @@
+We use the handbook-alignment repo (by huggingface) to fine-tune the LLMs. Please follow the instructions in the repo for the environment setup before fine-tuning the model.
+We put the key files used in this folder.

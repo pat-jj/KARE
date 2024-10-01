@@ -91,7 +91,7 @@ def main():
     g, edge_relationships = read_kg(kg_path)
     print(f"Read graph with {g.number_of_nodes()} nodes and {g.number_of_edges()} edges")
 
-    MAX_COMMUNITY_SIZE = 10
+    MAX_COMMUNITY_SIZE = 5
     partition_graph(g, edge_relationships, MAX_COMMUNITY_SIZE, output_dir)
 
 if __name__ == "__main__":

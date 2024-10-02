@@ -37,6 +37,8 @@ python pubmed_source.py
 
 
 **Extract KG from UMLS:**
+
+Our processed UMLS KG: [Google Drive](https://drive.google.com/file/d/1Zs4hXUiXs_ikkHjHbqp9ZEoH4l6WEP5H/view?usp=sharing)
 ```bash
 cd kg_construct
 python umls_source.py
@@ -101,7 +103,7 @@ python eval.py
 ```
 
 
-### * A Cost-Effective/Naive Approach (Skipping Step 1-3) to Validate/Reproduce Our Results
+### * A Cost-Effective/Naive Approach (Skipping Step 1-3) to Validate Our Results
 This approach will directly retrieve the knowledge summaries from an LLM, and use them to construct the input and output for LLM fine-tuning. However, the result would not be as good as the original method, but can still be used to validate the philosophy underlying our method.
 
     (This approach is suitable for those who do not want to spend money on building their own context-aware and concept-specific KG.)
@@ -112,7 +114,7 @@ This approach will directly retrieve the knowledge summaries from an LLM, and us
 
     **Major Disadvantage**: 
     (1) Relatively lower performance as it only uses the knowledge from LLM. 
-    (2) You need to prepare the knowledge from the same LLM for the every new sample during the inference -> higher cost if the application is long-term.
+    (2) For real-world application, you will need to prepare the knowledge from the **same LLM** for the every new sample during the inference -> higher cost if the application is long-term.
     
 ```bash
 cd prediction

@@ -2,6 +2,8 @@
 .key
 .ipynb_checkpoints
 .ttl
+.history
+history
 play.ipynb
 graph.txt
 umls_graph.txt

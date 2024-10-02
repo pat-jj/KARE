@@ -1,4 +1,4 @@
-## Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval
+# Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval
 
 
 ### 1. Prepare EHR data
@@ -7,7 +7,7 @@ cd ehr_prepare
 python ehr_data_prepare.py
 python sample_prepare.py
 ```
-- #### (Baseline Models Evaluation)
+#### (Baseline Models Evaluation)
     ```bash
     baselines/baseline_play.ipynb
     ```
@@ -102,8 +102,8 @@ cd prediction
 python eval.py
 ```
 
-
 ### * A Cost-Effective/Naive Approach (Skipping Step 1-3) to Validate Our Results
+---
 This approach will directly retrieve the knowledge summaries from an LLM, and use them to construct the input and output for LLM fine-tuning. However, the result would not be as good as the original method, but can still be used to validate the philosophy underlying our method.
 
     (This approach is suitable for those who do not want to spend money on building their own context-aware and concept-specific KG.)
@@ -121,7 +121,17 @@ cd prediction
 python dp_new.py
 ```
 
+Others
+---
+To call LLM APIs in this work, you need to 
 
+Enter AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_DEFAULT_REGION in ``apis_example/claude_api.py`` to call Claude APIs.
+
+Enter your OpenAI API key in ``apis_example/openai.key`` to call OpenAI APIs.
+
+Then, you need to rename ``apis_example`` to ``apis``, and put it under each folder where you need to call APIs.
 
 ---
+
+
 Thank you for your interest in our work!

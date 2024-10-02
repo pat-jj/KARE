@@ -146,9 +146,9 @@ def patient_graph_construct(data, entity_mapping, condition_dict_inv, procedure_
 def theme_relevance(summary, task, lambda_3=0.1):
     theme_terms = MORTALITY_THEME_TERMS if task == "mortality" else READMISSION_THEME_TERMS
     theme_embeddings = generate_embeddings(theme_terms)
-    summary_embedding = generate_embeddings([summary])[0]
+    summary_embedding = list(generate_embeddings([summary]).values())[0]
 
-    max_similarity = max(np.dot(summary_embedding, theme_embedding) for theme_embedding in theme_embeddings)
+    max_similarity = max(np.dot(summary_embedding, theme_embedding) for theme_embedding in theme_embeddings.values())
     return 1 + lambda_3 * max_similarity
 
 def dynamic_graph_retrieval_augmentation(patient_nodes, summary_to_nodes, summary_embeddings, patient_base_context_embedding, task, patient_node_visit_idx=None, N=10, alpha=0.8, beta=0.5, lambda_1=0.1, lambda_2=0.1, lambda_3=0.1):

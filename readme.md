@@ -133,5 +133,17 @@ Then, you need to rename ``apis_example`` to ``apis``, and put it under each fol
 
 ---
 
+## Cite KARE
+```bibtex
+@misc{jiang2024reasoningenhancedhealthcarepredictionsknowledge,
+      title={Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval}, 
+      author={Pengcheng Jiang and Cao Xiao and Minhao Jiang and Parminder Bhatia and Taha Kass-Hout and Jimeng Sun and Jiawei Han},
+      year={2024},
+      eprint={2410.04585},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2410.04585}, 
+}
+```
 
 Thank you for your interest in our work!

@@ -20,13 +20,18 @@ MODEL = ''
 # TYPE = '-adpt-weighted-0.33'
 TYPE='knowledge_dp'
 # MODEL = '_no_supp'
-os.environ['CUDA_VISIBLE_DEVICES'] = '5'
+os.environ['CUDA_VISIBLE_DEVICES'] = '3'
 
 
-PORT = 3340
-MODEL_PATH = "/shared/eng/pj20/kelpie_exp_data/llm_training_output/mortality_mimic3_multitask_label_0/checkpoint-623"
-TEST_PATH = "/shared/eng/pj20/kelpie_exp_data/llm_finetune_data_multitask/mimic3_mortality_test_multitask.jsonl"
-SAVE_PATH = "/shared/eng/pj20/kelpie_exp_data/results/mimic3_mortality_multitask.json"
+PORT = 3343
+# MODEL_PATH = "/shared/eng/pj20/kelpie_exp_data/llm_training_output/mortality_mimic4_multitask_0/checkpoint-544"
+MODEL_PATH = "/shared/eng/pj20/kelpie_exp_data/llm_training_output/readmission_mimic4_multitask_0/checkpoint-888"
+# TEST_PATH = "/shared/eng/pj20/kelpie_exp_data/llm_finetune_data_multitask/mimic4_mortality_test_multitask_reason.jsonl"
+# TEST_PATH = "/shared/eng/pj20/kelpie_exp_data/llm_finetune_data_multitask/mimic4_readmission_test_multitask_reason.jsonl"
+TEST_PATH = "/shared/eng/pj20/kelpie_exp_data/llm_finetune_data_multitask/mimic4_readmission_test_multitask.jsonl"
+
+# SAVE_PATH = "/shared/eng/pj20/kelpie_exp_data/results/mimic4_readmission_multitask_reason.json"
+SAVE_PATH = "/shared/eng/pj20/kelpie_exp_data/results/mimic4_readmission_multitask_speed.json"
 
 # PORT = 3333
 # MODEL_PATH = "/shared/eng/pj20/kelpie_exp_data/llm_training_output/readmission_mimic4_straight_ft/checkpoint-108"

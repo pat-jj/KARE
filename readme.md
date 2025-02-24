@@ -8,11 +8,12 @@ python ehr_data_prepare.py
 python sample_prepare.py
 ```
 #### (Baseline Models Evaluation)
-    ```bash
-    baselines/baseline_play.ipynb
-    ```
+```bash
+baselines/baseline_play.ipynb
+```
 
 ### 2. Knowledge Graph (KG) Construction
+
 **General Preparation:**
 ```bash
 cd kg_construct
@@ -38,11 +39,14 @@ python pubmed_source.py
 
 **Extract KG from UMLS:**
 
-Our processed UMLS KG: [Google Drive](https://drive.google.com/file/d/1Zs4hXUiXs_ikkHjHbqp9ZEoH4l6WEP5H/view?usp=sharing)
+Source data files: [graph.txt](https://storage.googleapis.com/pyhealth/umls/graph.txt) (UMLS KG) and [UMLS.csv](https://storage.googleapis.com/pyhealth/umls/UMLS.csv) (mapping file)
+
 ```bash
 cd kg_construct
 python umls_source.py
 ```
+
+Alternatively, you can use our processed UMLS KG: [Google Drive](https://drive.google.com/file/d/1Zs4hXUiXs_ikkHjHbqp9ZEoH4l6WEP5H/view?usp=sharing)
 
 **Extract KG from LLM:**
 ```bash

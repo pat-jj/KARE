@@ -54,6 +54,12 @@ cd kg_construct
 python llm_source.py
 ```
 
+**Combine KGs**
+```bash
+cd kg_construct
+python combine.py
+```
+
 **Semantic Clustering:**
 
 After combining all the KGs into kg_raw.txt under "graph" folder (in project root), run:

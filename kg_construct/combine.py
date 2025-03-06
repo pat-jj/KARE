@@ -101,7 +101,7 @@ def combine_concept_specific_knowledge_graphs():
 def main():
     graph_path = "./graphs_"
     combine_knowledge_graphs(graph_path)
-    # combine_concept_specific_knowledge_graphs()
+    combine_concept_specific_knowledge_graphs()
 
 if __name__ == "__main__":
     main()

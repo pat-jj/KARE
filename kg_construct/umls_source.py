@@ -480,12 +480,12 @@ def main():
             
             if completed_tasks % 100 == 0:
                 print("Performing intermediate saving...")
-                with open("/shared/eng/pj20/kelpie_exp_data/kg_construct/kg_from_kg_intermediate.json", "w") as f:
+                with open("/shared/eng/pj20/kelpie_exp_data/kg_construct_/kg_from_kg_intermediate.json", "w") as f:
                     json.dump(output_file, f, indent=2)
                     
             
 
-    with open("/shared/eng/pj20/kelpie_exp_data/kg_construct/kg_from_kg.json", "w") as f:
+    with open("/shared/eng/pj20/kelpie_exp_data/kg_construct_/kg_from_kg.json", "w") as f:
         json.dump(output_file, f, indent=2)
 
 if __name__ == "__main__":

@@ -80,7 +80,7 @@ def load_entity_mappings():
 
 
 def read_indirect_nodes(code, main_concept, entity_mapping, mode):
-    graph_path = f"../kg_construct/graphs/{mode}/combined/{code}.txt"
+    graph_path = f"../kg_construct/graphs/{mode}/{code}.txt"
     indirect_nodes = set()
     with open(graph_path, 'r') as f:
         lines = f.readlines()

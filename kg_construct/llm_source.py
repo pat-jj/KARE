@@ -188,7 +188,7 @@ def main():
     kg_triples_dict_llm = build_kg_for_concepts_llm(filtered_concept_sets, save_interval=500)
 
     # Save the final KG triples from LLM to a JSON file
-    with open("/shared/eng/pj20/kelpie_exp_data/kg_construct/kg_from_llm.json", "w") as f:
+    with open("/shared/eng/pj20/kelpie_exp_data/kg_construct_/kg_from_llm.json", "w") as f:
         json.dump(list(kg_triples_dict_llm), f, indent=4)
 
     print(f"Number of filtered concept sets: {len(filtered_concept_sets)}")  
